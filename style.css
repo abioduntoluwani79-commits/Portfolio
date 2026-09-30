@@ -217,64 +217,6 @@ section {
   color: var(--muted);
 }
 
-.hero-rotator {
-  position: relative;
-  display: inline-block;
-  min-height: 44px;
-  margin: 6px 0 18px;
-  color: var(--accent);
-  font-size: clamp(0.92rem, 1.5vw, 1.2rem);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.hero-rotator .word {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  white-space: nowrap;
-  width: 0;
-  overflow: hidden;
-  border-right: 2px solid var(--accent);
-  padding-right: 8px;
-  box-sizing: border-box;
-  animation: wordCycle 9s infinite;
-}
-
-.hero-rotator .word:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.hero-rotator .word:nth-child(2) {
-  animation-delay: 3s;
-}
-
-.hero-rotator .word:nth-child(3) {
-  animation-delay: 6s;
-}
-
-@keyframes wordCycle {
-  0%, 12% {
-    width: 0;
-    opacity: 0;
-  }
-  18%, 30% {
-    width: calc(var(--len) * 0.66ch);
-    opacity: 1;
-  }
-  35%, 58% {
-    width: calc(var(--len) * 0.66ch);
-    opacity: 1;
-  }
-  65%, 100% {
-    width: 0;
-    opacity: 0;
-  }
-}
-
 .hero-description {
   max-width: 570px;
   color: var(--muted);
