@@ -385,9 +385,10 @@ section {
 
 .current-role-layout {
   display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
   gap: 26px;
   align-items: start;
+  min-width: 0;
 }
 
 .current-role-copy {
@@ -402,6 +403,7 @@ section {
 }
 
 .role-panel {
+  min-width: 0;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: linear-gradient(180deg, rgba(18, 22, 28, 0.96), rgba(9, 12, 17, 1));
@@ -507,16 +509,18 @@ section {
 
 .project-card {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
   background: linear-gradient(180deg, rgba(17, 21, 27, 0.92), rgba(9, 12, 17, 1));
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
+  min-width: 0;
 }
 
 .project-image {
   min-height: 500px;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -526,6 +530,7 @@ section {
 
 .project-visual {
   width: min(100%, 560px);
+  min-width: 0;
   height: 360px;
   border: 1px solid var(--line);
   border-radius: 24px;
@@ -557,6 +562,8 @@ section {
 
 .project-preview {
   --preview-scale: 0.45;
+  width: 100%;
+  min-width: 0;
   height: 317px;
   overflow: hidden;
   background: #f8f7f4;
@@ -1578,7 +1585,11 @@ section {
   }
 
   .project-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .current-role-layout {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .project-image {
