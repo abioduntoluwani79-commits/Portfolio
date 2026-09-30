@@ -60,6 +60,7 @@ img {
 
 .navbar {
   width: 100%;
+  margin-inline: auto;
   padding: 0 32px;
   min-height: 76px;
   display: flex;
@@ -142,6 +143,7 @@ img {
 section {
   width: 100%;
   padding: 0 32px;
+  margin-inline: auto;
 }
 
 .eyebrow {
@@ -177,6 +179,7 @@ section {
 
 .hero-content {
   max-width: 700px;
+  min-width: 0;
 }
 
 .hero-badge {
@@ -756,6 +759,10 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.footer-contact {
+  overflow-wrap: anywhere;
 }
 
 .footer-links a {
@@ -1466,7 +1473,7 @@ section {
   .page-grid,
   .two-column,
   .about {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .hero-panel {
@@ -1609,6 +1616,10 @@ section {
     font-size: clamp(3.2rem, 17vw, 5rem);
   }
 
+  .hero h1 span {
+    font-size: clamp(1.9rem, 11vw, 3.5rem);
+  }
+
   .hero-description {
     font-size: 0.98rem;
   }
@@ -1683,6 +1694,72 @@ section {
     flex-direction: column;
 
     padding-bottom: 30px;
+  }
+
+  .hero-content,
+  .section-heading,
+  .role-panel,
+  .project-info,
+  .service-card,
+  .about,
+  .contact,
+  .page-hero,
+  .page-card,
+  .info-panel,
+  .experience-header,
+  .timeline-item,
+  .cta-box {
+    text-align: center;
+  }
+
+  .role-header,
+  .timeline-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-info {
+    align-items: center;
+  }
+
+  .project-tech,
+  .tag-list {
+    justify-content: center;
+  }
+
+  .project-link {
+    margin-inline: auto;
+  }
+
+  .about-points,
+  .footer-grid,
+  .footer-bottom {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-contact {
+    align-items: center;
+  }
+
+  .responsibilities {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .contact-form {
+    text-align: left;
+  }
+
+  .experience-metrics,
+  .feature-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .metric-card,
+  .feature-card {
+    text-align: center;
   }
 }
 
