@@ -187,10 +187,10 @@ section {
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 999px;
   color: var(--muted);
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
   font-size: 0.78rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -244,7 +244,7 @@ section {
   min-width: 170px;
   padding: 14px 16px;
   border-radius: 14px;
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--line);
 }
 
@@ -296,11 +296,11 @@ section {
 
 .btn-secondary {
   color: var(--text);
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .btn-secondary:hover {
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 
@@ -401,8 +401,8 @@ section {
 .availability-box {
   padding: 22px 24px;
   border-radius: 18px;
-  border: 1px solid rgba(255,255,255,0.07);
-  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.02);
   margin-bottom: 28px;
 }
 
@@ -427,7 +427,7 @@ section {
   padding: 20px 18px;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .stack-card h3 {
@@ -482,7 +482,7 @@ section {
   border-radius: 24px;
   background: rgba(7, 11, 14, 0.9);
   overflow: hidden;
-  box-shadow: 0 18px 42px rgba(0,0,0,0.36);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.36);
 }
 
 .window-bar {
@@ -491,7 +491,7 @@ section {
   gap: 8px;
   padding: 16px 18px;
   border-bottom: 1px solid var(--line);
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .window-bar span {
@@ -499,12 +499,20 @@ section {
   height: 10px;
   border-radius: 50%;
   display: block;
-  background: rgba(255,255,255,0.24);
+  background: rgba(255, 255, 255, 0.24);
 }
 
-.window-bar span:nth-child(1) { background: #ff8d7b; }
-.window-bar span:nth-child(2) { background: #f4c76d; }
-.window-bar span:nth-child(3) { background: #79d38c; }
+.window-bar span:nth-child(1) {
+  background: #ff8d7b;
+}
+
+.window-bar span:nth-child(2) {
+  background: #f4c76d;
+}
+
+.window-bar span:nth-child(3) {
+  background: #79d38c;
+}
 
 .project-preview {
   --preview-scale: 0.45;
@@ -528,6 +536,7 @@ section {
 }
 
 @media (hover: hover) and (pointer: fine) {
+
   .project-card:hover,
   .project-card:focus-within {
     transform: translateY(-6px);
@@ -542,6 +551,7 @@ section {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .project-card,
   .project-preview iframe {
     transition: none;
@@ -571,7 +581,7 @@ section {
   margin-bottom: 18px;
 }
 
-.project-info > p {
+.project-info>p {
   color: var(--muted);
   margin-bottom: 24px;
 }
@@ -594,7 +604,7 @@ section {
 .project-link {
   width: fit-content;
   font-weight: 700;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 4px;
 }
 
@@ -667,7 +677,7 @@ section {
   letter-spacing: -0.05em;
 }
 
-.about-content > p {
+.about-content>p {
   max-width: 620px;
   color: var(--muted);
   font-size: 1.08rem;
@@ -684,7 +694,7 @@ section {
   padding: 15px 18px;
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
   font-size: 0.9rem;
 }
 
@@ -712,7 +722,7 @@ section {
   letter-spacing: -0.055em;
 }
 
-.contact > p:not(.eyebrow) {
+.contact>p:not(.eyebrow) {
   max-width: 600px;
   margin: 24px auto 0;
   color: var(--muted);
@@ -951,7 +961,7 @@ section {
   border: 1px solid var(--line);
   border-radius: 12px;
   color: var(--muted);
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .contact-main {
@@ -990,7 +1000,7 @@ section {
   padding: 18px 18px;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .offer-item span {
@@ -1058,7 +1068,7 @@ section {
   padding: 18px 16px;
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .method-card h3 {
@@ -1075,6 +1085,10 @@ section {
   line-height: 1.6;
 }
 
+.method-card a {
+  overflow-wrap: anywhere;
+}
+
 .contact-form {
   display: grid;
   gap: 16px;
@@ -1084,7 +1098,7 @@ section {
 .contact-form textarea,
 .contact-form select {
   width: 100%;
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 14px 16px;
@@ -1167,6 +1181,7 @@ section {
 }
 
 @media (max-width: 900px) {
+
   .contact-intro,
   .contact-layout {
     grid-template-columns: 1fr;
@@ -1216,8 +1231,8 @@ section {
   gap: 8px;
   padding: 8px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -1248,8 +1263,8 @@ section {
   padding: 20px 18px;
   border-radius: 18px;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,0.02);
-  box-shadow: rgba(0,0,0,0.08) 0 10px 25px;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.08) 0 10px 25px;
 }
 
 .metric-card span {
@@ -1366,8 +1381,8 @@ section {
 }
 
 .status-badge.muted {
-  background: rgba(255,255,255,0.04);
-  border-color: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
   color: var(--muted);
 }
 
@@ -1405,7 +1420,7 @@ section {
   padding: 7px 10px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.02);
   color: var(--muted);
   font-size: 0.72rem;
 }
@@ -1459,6 +1474,7 @@ section {
 }
 
 @media (max-width: 900px) {
+
   .experience-metrics,
   .feature-grid {
     grid-template-columns: 1fr 1fr;
@@ -1468,28 +1484,29 @@ section {
     flex-direction: column;
   }
 }
-  .hero-layout,
-  .project-card,
-  .page-grid,
-  .two-column,
-  .about {
-    grid-template-columns: minmax(0, 1fr);
-  }
 
-  .hero-panel {
-    min-height: 420px;
-  }
-
-  .services-grid,
-  .stack-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .role-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.hero-layout,
+.project-card,
+.page-grid,
+.two-column,
+.about {
+  grid-template-columns: minmax(0, 1fr);
 }
+
+.hero-panel {
+  min-height: 420px;
+}
+
+.services-grid,
+.stack-grid {
+  grid-template-columns: 1fr;
+}
+
+.role-header {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 
 @media (max-width: 650px) {
   .navbar {
