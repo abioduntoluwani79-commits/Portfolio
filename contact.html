@@ -140,10 +140,17 @@
           </select>
 
           <textarea name="Project Details" placeholder="Tell me about your project, timeline, and what success looks like." aria-label="Tell me about your project, timeline, and what success looks like." required></textarea>
-          <button type="submit">Send Project Enquiry</button>
+          <button type="submit">Prepare Enquiry</button>
+          <div class="contact-results" id="contact-results" hidden aria-live="polite">
+            <p>Enquiry ready. Choose where to review and send it:</p>
+            <div class="final-buttons">
+              <a class="btn btn-primary" id="email-draft">Open email draft</a>
+              <a class="btn btn-secondary" id="whatsapp-draft" target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+            </div>
+          </div>
         </form>
 
-        <p class="form-footnote">Submitting prepares your enquiry in email and WhatsApp for you to review and send.</p>
+        <p class="form-footnote">Submitting creates email and WhatsApp draft links for you to review and send.</p>
       </aside>
     </section>
 
@@ -194,6 +201,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     const projectForm = document.getElementById('project-form');
+    const contactResults = document.getElementById('contact-results');
+    const emailDraft = document.getElementById('email-draft');
+    const whatsappDraft = document.getElementById('whatsapp-draft');
+
+    function clearContactResults() {
+      contactResults.hidden = true;
+      emailDraft.removeAttribute('href');
+      whatsappDraft.removeAttribute('href');
+    }
+
+    projectForm.addEventListener('input', clearContactResults);
+    projectForm.addEventListener('change', clearContactResults);
 
     projectForm.addEventListener('submit', function (event) {
       event.preventDefault();
@@ -221,15 +240,12 @@
       );
 
       const mailtoLink = `mailto:abioduntoluwani79@gmail.com?subject=${subject}&body=${body}`;
-      const whatsappLink = `https://wa.me/2348164117344?text=${encodeURIComponent(`Hello Toluwani, I want to discuss a project.\n\nFull Name: ${fullName}\nEmail Address: ${email}\nBusiness Name: ${businessName || 'Not provided'}\nProject Budget: ${budget}\nProject Type: ${projectType}\n\nProject Details:\n${details}`)}`;
+      const whatsappMessage = `Hello Toluwani, I want to discuss a project.\n\nFull Name: ${fullName}\nEmail Address: ${email}\nBusiness Name: ${businessName || 'Not provided'}\nProject Budget: ${budget}\nProject Type: ${projectType}\n\nProject Details:\n${details}`;
+      const whatsappLink = `https://wa.me/2348164117344?text=${encodeURIComponent(whatsappMessage)}`;
 
-      window.location.href = mailtoLink;
-
-      setTimeout(() => {
-        window.open(whatsappLink, '_blank', 'noopener,noreferrer');
-      }, 250);
-
-      projectForm.reset();
+      emailDraft.href = mailtoLink;
+      whatsappDraft.href = whatsappLink;
+      contactResults.hidden = false;
     });
   </script>
 </body>

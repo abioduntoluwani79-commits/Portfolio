@@ -1152,6 +1152,15 @@ section {
   font-size: 0.82rem;
 }
 
+.contact-results {
+  margin-top: 4px;
+}
+
+.contact-results > p {
+  margin-bottom: 12px;
+  color: var(--muted);
+}
+
 .final-call {
   margin-top: 30px;
   margin-bottom: 40px;
