@@ -4,70 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | NEXVYR</title>
-  <meta name="description" content="Learn about NEXVYR and the approach behind our modern, conversion-focused web design work.">
+  <meta name="description" content="Learn about NEXVYR and the approach behind modern, conversion-focused web design for ambitious businesses.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar-expand-lg navbar-dark">
     <a href="index.html" class="logo" aria-label="NEXVYR home">
       <span class="logo-mark">N</span>
       <span class="logo-text">NEXVYR</span>
     </a>
 
-    <nav class="nav-links">
-      <a href="work.html">Work</a>
-      <a href="experience.html">Experience</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-navigation" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <a href="contact.html" class="nav-cta">Let's Talk</a>
+    <nav class="collapse navbar-collapse nav-links" id="site-navigation" aria-label="Main navigation">
+      <div class="navbar-nav ms-lg-auto">
+        <a class="nav-link" href="work.html">Work</a>
+        <a class="nav-link" href="experience.html">Experience</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Let's Talk</a>
+    </nav>
   </header>
 
   <main class="page-main">
     <section class="page-hero">
       <p class="eyebrow">Why NEXVYR</p>
-      <h1>Clean design and clear intent.</h1>
-      <p>NEXVYR helps businesses look more credible online by combining sharp visual design, thoughtful UX, and layouts built for conversion.</p>
+      <h1>Clean design, clear intent, and a sharper business presence.</h1>
+      <p>NEXVYR helps businesses look more credible online through thoughtful design, clearer messaging, and a user experience shaped around real conversion goals.</p>
     </section>
 
     <section class="two-column">
-      <div class="page-card">
+      <article class="page-card">
         <span class="tag">Our approach</span>
         <h3>Design that reflects business ambition.</h3>
-        <p>We believe that a professional website should do more than look good—it should make your business feel easy to trust, easy to understand, and easy to contact. That is why every project is grounded in clarity, hierarchy, and conversion-focused user flow.</p>
-      </div>
+        <p>A professional website should make a business easy to trust, understand, and contact. Each project begins with clarity, hierarchy, and a path that helps the right audience take action.</p>
+      </article>
 
-      <div class="info-panel">
+      <aside class="info-panel">
         <div>
           <h4>What matters most</h4>
           <div class="mini-list">
-            <span>Modern, elegant design</span>
-            <span>Responsive on all screen sizes</span>
+            <span>Modern, considered design</span>
+            <span>Responsive on every screen</span>
             <span>Built around business goals</span>
           </div>
         </div>
-      </div>
+      </aside>
     </section>
 
-    <section class="page-grid" style="margin-top: 30px;">
+    <section class="page-grid">
       <article class="page-card">
         <span class="tag">01</span>
         <h3>Strategy</h3>
-        <p>We identify the real conversion goals and audience needs before designing anything.</p>
+        <p>We identify the audience, the conversion goal, and the information people need to trust the business.</p>
       </article>
 
       <article class="page-card">
         <span class="tag">02</span>
         <h3>Design</h3>
-        <p>We shape the visual language with a premium feel and clear, polished interface structure.</p>
+        <p>We shape a clean visual language with strong hierarchy, better readability, and a premium presentation.</p>
       </article>
 
       <article class="page-card">
         <span class="tag">03</span>
         <h3>Build</h3>
-        <p>We turn the concept into a responsive, functional experience that aligns with your goals.</p>
+        <p>We turn the design into a responsive, polished experience that works well across devices and channels.</p>
       </article>
     </section>
   </main>
@@ -104,5 +110,7 @@
       <path d="M20.5 3.5A11.7 11.7 0 0 0 3.4 18.5L2 22l3.6-1.1A11.7 11.7 0 1 0 20.5 3.5Zm-7.4 17.1c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-2.1.6.6-2.1-.2-.4A9.6 9.6 0 0 1 12.1 4.4a9.7 9.7 0 0 1 9.6 9.8 9.7 9.7 0 0 1-8.6 9.4Zm5.3-7.1c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1a8.1 8.1 0 0 1-2.3-1.4 8.9 8.9 0 0 1-1.6-2c-.2-.3 0-.5.2-.7l.3-.3c.1-.1.2-.2.3-.4.1-.2 0-.3 0-.4l-.4-1c-.1-.3-.3-.3-.4-.3h-.4c-.1 0-.3.1-.5.2s-.6.6-.6 1.5c0 .9.6 1.7.7 1.8.1.2 1.4 2.2 3.4 3.1.5.2.9.3 1.2.4.5.2.9.1 1.2.1.4 0 1.1-.5 1.3-1 .2-.6.2-1 .1-1.1-.1-.2-.3-.2-.6-.4Z" fill="currentColor"/>
     </svg>
   </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

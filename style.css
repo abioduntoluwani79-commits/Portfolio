@@ -1497,7 +1497,11 @@ section {
   }
 
   .nav-links {
-    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    padding-top: 12px;
   }
 
   .hero {
@@ -1597,7 +1601,9 @@ section {
   }
 
   .nav-links {
-    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
   }
 
   .nav-cta {
